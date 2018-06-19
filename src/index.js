@@ -7,6 +7,8 @@ let root = document.createElement('div');
 root.id = "root";
 document.body.appendChild( root );
 
+document.title = 'GRE Words - Remember them all!'
+
 document.getElementsByTagName('head')[0].innerHTML += '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">';
 
 document.getElementsByTagName('head')[0].innerHTML += '<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">';
