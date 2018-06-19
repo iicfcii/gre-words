@@ -1,0 +1,113 @@
+.calibre5 {
+    display: table-row;
+    vertical-align: middle;
+    }
+
+.kindle-cn-bold {
+    font-weight: bold;
+    font-size: 24px;
+    font-family:Roboto, Helvetica, Arial, sans-serif, "宋体", SimSun;
+    color: rgba(0, 0, 0, 0.87);
+    }
+
+.kindle-cn-italic {
+    font-style: italic;
+    font-family:Helvetica, Arial, sans-serif, "宋体", SimSun;
+    color: rgba(0, 0, 0, 0.87);
+    }
+
+.kindle-cn-specialtext-solid {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-style: solid;
+    border-top-width: 1px
+    }
+.kindle-cn-table-dg5l {
+    font-size: 24px;
+    font-family:Helvetica, Arial, sans-serif, "宋体", SimSun;
+    color: rgba(0, 0, 0, 0.87);
+    border-bottom-style: none;
+    border-bottom-width: 1px;
+    border-left-style: none;
+    border-left-width: 1px;
+    border-right-style: none;
+    border-right-width: 1px;
+    border-top-style: none;
+    border-top-width: 1px;
+    display: table-cell;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    text-align: left;
+    vertical-align: top
+    }
+.kindle-cn-table-dg5lx {
+    font-size: 24px;
+    font-family:Helvetica, Arial, sans-serif, "宋体", SimSun;
+    color: rgba(0, 0, 0, 0.87);
+    border-bottom-style: none;
+    border-bottom-width: 1px;
+    border-left-style: none;
+    border-left-width: 1px;
+    border-right-style: none;
+    border-right-width: 1px;
+    border-top-style: none;
+    border-top-width: 1px;
+    display: table-cell;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    text-align: left;
+    vertical-align: top
+    }
+.kindle-cn-table-dg5r {
+    white-space: nowrap;
+    font-size: 24px;
+    font-family:Helvetica, Arial, sans-serif, "宋体", SimSun;
+    color: rgba(0, 0, 0, 0.87);
+    border-bottom-style: none;
+    border-bottom-width: 1px;
+    border-left-style: none;
+    border-left-width: 1px;
+    border-right-style: none;
+    border-right-width: 1px;
+    border-top-style: none;
+    border-top-width: 1px;
+    display: table-cell;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    text-align: right;
+    vertical-align: top
+    }
+.kindle-cn-table-dg5rx {
+    white-space: nowrap;
+    font-size: 24px;
+    font-family:Helvetica, Arial, sans-serif, "宋体", SimSun;
+    color: rgba(0, 0, 0, 0.87);
+    border-bottom-style: none;
+    border-bottom-width: 1px;
+    border-left-style: none;
+    border-left-width: 1px;
+    border-right-style: none;
+    border-right-width: 1px;
+    border-top-style: none;
+    border-top-width: 1px;
+    display: table-cell;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    text-align: right;
+    vertical-align: top
+    }
+.kindle-cn-underline {
+    text-decoration: underline
+    }
