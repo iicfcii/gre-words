@@ -110,6 +110,21 @@ class WordCard extends React.Component {
       }
     }
 
+    this.handleKeyUp = (event) => {
+      if(event.keyCode == 83) {
+        // console.log('Down');
+        this.handleShowClick();
+      }
+      if(event.keyCode == 65) {
+        // console.log('Left');
+        this.handleForgetClick();
+      }
+      else if(event.keyCode == 68) {
+        // console.log('Right');
+        this.handleRememberClick();
+      }
+    }
+
     this.handleShowClick = () => {
       // console.log(this.state);
       this.setState({
@@ -176,6 +191,7 @@ class WordCard extends React.Component {
   componentDidMount(){
     // Request a word when component is created
     ipcRenderer.send('currentWord',this.props.list);
+    document.addEventListener("keyup", this.handleKeyUp);
   }
 
   componentDidUpdate(prevProps, prevState, snapshot){
@@ -188,11 +204,13 @@ class WordCard extends React.Component {
   }
   componentWillUnmount(){
     ipcRenderer.removeAllListeners('word');
+    document.removeEventListener("keyup", this.handleKeyUp);
   }
   render() {
     const {classes} = this.props;
     return (
-      <Card className={classes.card}>
+      <Card
+        className={classes.card}>
         <CardHeader
           className={classes.cardHeader}
           title = {'List ' + this.props.list}

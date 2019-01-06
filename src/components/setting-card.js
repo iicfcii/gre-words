@@ -50,6 +50,7 @@ class SettingCard extends React.Component {
       shuffleDialogOpen: false,
       resetDialogOpen: false,
       reorderDialogOpen: false,
+      prioritizeDialogOpen: false,
     };
 
     this.handleClose = () => {
@@ -96,6 +97,17 @@ class SettingCard extends React.Component {
       });
     }
 
+    this.handlePrioritizeClick = () => {
+      this.setState({
+        prioritizeDialogOpen: true,
+      });
+    }
+    this.handlePrioritizeYes = () => {
+      ipcRenderer.send('prioritize');
+      this.setState({
+        prioritizeDialogOpen: false,
+      });
+    }
   }
 
   render() {
@@ -161,6 +173,33 @@ class SettingCard extends React.Component {
             <Button
               size="large"
               variant="contained"
+              onClick={this.handlePrioritizeClick}>
+              prioritize
+            </Button>
+            <Dialog
+              open={this.state.prioritizeDialogOpen}
+              onClose={this.handleClose}
+            >
+              <DialogTitle>{"Prioritize high forget times words?"}</DialogTitle>
+              <DialogContent>
+                <DialogContentText>
+                  This operation will move words with forget times greater than 4
+                  to the first several lists. Are you sure?
+                </DialogContentText>
+              </DialogContent>
+              <DialogActions>
+                <Button onClick={this.handleClose}>
+                  No
+                </Button>
+                <Button onClick={this.handlePrioritizeYes} autoFocus>
+                  Yes
+                </Button>
+              </DialogActions>
+            </Dialog>
+
+            <Button
+              size="large"
+              variant="contained"
               onClick={this.handleResetClick}>
               Reset
             </Button>
@@ -183,6 +222,7 @@ class SettingCard extends React.Component {
                 </Button>
               </DialogActions>
             </Dialog>
+
           </CardContent>
       </Card>
     );
