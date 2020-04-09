@@ -58,6 +58,7 @@ class SettingCard extends React.Component {
         shuffleDialogOpen: false,
         resetDialogOpen: false,
         reorderDialogOpen: false,
+        prioritizeDialogOpen: false,
       });
     }
 

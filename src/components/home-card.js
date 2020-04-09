@@ -39,7 +39,7 @@ class HomeCard extends React.Component {
       <Card className={classes.card}>
         <CardContent className={classes.cardContent}>
           <Typography variant="display2" noWrap>
-            Welcome to GRE words
+            Welcome to GRE Words
           </Typography>
           <Typography variant="display1" noWrap>
             {"Let's remember them all!"}
